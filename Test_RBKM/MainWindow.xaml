@@ -1,0 +1,52 @@
+﻿<Window
+    x:Class="Test_RBKM.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Test_RBKM"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    Background="Gray"
+    mc:Ignorable="d">
+    <Grid Margin="3,3,3,3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBox
+            x:Name="PathTextBlock"
+            Grid.Row="0"
+            Width="Auto"
+            Margin="0,0,103,0"
+            Background="AliceBlue"
+            VerticalContentAlignment="Center"
+            Text="Укажите путь" />
+        <Button
+            x:Name="EnterPathBtn"
+            Grid.Row="0"
+            Width="100"
+            HorizontalAlignment="Right"
+            Click="EnterPath_Click"
+            Content="Enter path" />
+        <GridSplitter
+            Grid.Row="1"
+            Height="3"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Center"
+            Background="Gray"
+            ShowsPreview="True" />
+        <ScrollViewer Grid.Row="2" 
+                      HorizontalScrollBarVisibility="Auto" 
+                      VerticalScrollBarVisibility="Auto">
+            <TextBlock
+            x:Name="OutData"
+            Grid.Row="2"
+            Background="AliceBlue"
+            Text="qwe" />    
+        </ScrollViewer>
+        
+    </Grid>
+</Window>
