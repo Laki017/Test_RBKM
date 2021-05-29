@@ -33,9 +33,9 @@ namespace Test_RBKM
                         outData += file.Name + "\n";
                         foreach (Type t in types)
                         {
-                            if (t.IsClass)
+                            if (t.IsClass)                                          
                                 outData += "\t" + t.Name + "\n";
-                            foreach (MethodInfo method in t.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly | BindingFlags.NonPublic))
+                            foreach (MethodInfo method in t.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance | BindingFlags.DeclaredOnly))
                             {
                                 if (method.IsPublic) outData += "\t\t- " + method.Name + "\n";
                                 if (method.IsFamily) outData += "\t\t- " + method.Name + "\n";

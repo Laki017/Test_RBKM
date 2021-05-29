@@ -21,8 +21,8 @@
             Grid.Row="0"
             Width="Auto"
             Margin="0,0,103,0"
-            Background="AliceBlue"
             VerticalContentAlignment="Center"
+            Background="AliceBlue"
             Text="Укажите путь" />
         <Button
             x:Name="EnterPathBtn"
@@ -38,15 +38,16 @@
             VerticalAlignment="Center"
             Background="Gray"
             ShowsPreview="True" />
-        <ScrollViewer Grid.Row="2" 
-                      HorizontalScrollBarVisibility="Auto" 
-                      VerticalScrollBarVisibility="Auto">
-            <TextBlock
-            x:Name="OutData"
+        <ScrollViewer
             Grid.Row="2"
-            Background="AliceBlue"
-            Text="qwe" />    
+            HorizontalScrollBarVisibility="Auto"
+            VerticalScrollBarVisibility="Auto">
+            <TextBlock
+                x:Name="OutData"
+                Grid.Row="2"
+                Background="AliceBlue"
+                Text="qwe" />
         </ScrollViewer>
-        
+
     </Grid>
 </Window>
